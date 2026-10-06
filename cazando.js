@@ -33,6 +33,7 @@ function iniciarJuego(){
   graficarGato();
   graficarComida();
   intervalo = setInterval(restarTiempo, 1000);
+  aparecerComida();
 }
 
 function graficarRectangulo (x, y, ancho, alto, color){
@@ -101,6 +102,8 @@ mostrarEnSpan ("tiempo", tiempo);
 if (tiempo <= 0){
     clearInterval(intervalo);
     alert("Game Over");
+  }else if (puntos >= 6){
+  clearInterval(intervalo);
+  alert("¡Ganaste!");
   }
-
 }
