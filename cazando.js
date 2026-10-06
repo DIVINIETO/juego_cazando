@@ -5,6 +5,8 @@ let gatoX = 0 ;
 let gatoY = 0 ;
 let comidaX = 0 ;
 let comidaY = 0 ;
+let puntos = 0 ;
+
 
 const ALTO_GATO = 50 ;
 const ANCHO_GATO = 50 ;
@@ -42,33 +44,25 @@ function limpiarCanva(){
 
 function moverIzquierda(){
   gatoX = gatoX - 10 ;
-  limpiarCanva();
-  graficarGato();
-  graficarComida();
+  actualizarPantalla();
   detectarColision();
 }
 
 function moverDerecha(){
   gatoX = gatoX + 10 ;
-  limpiarCanva();
-  graficarGato();
-  graficarComida();
+  actualizarPantalla();
   detectarColision();
 }
 
 function moverArriba(){
   gatoY = gatoY - 10 ;
-  limpiarCanva();
-  graficarGato();
-  graficarComida();
+  actualizarPantalla();
   detectarColision();
 }
 
 function moverAbajo(){
   gatoY = gatoY + 10 ;
-  limpiarCanva();
-  graficarGato();
-  graficarComida();
+  actualizarPantalla();
   detectarColision();
 }
 
@@ -77,6 +71,22 @@ function detectarColision (){
         gatoX + ANCHO_GATO > comidaX &&
         gatoY < comidaY + ALTO_COMIDA &&
         gatoY + ALTO_GATO > comidaY ) {
-        alert("El gato ha comido!!")
+        // alert("El gato ha comido!!")
+        graficarComida();
+        puntos = puntos +1 ;
+        mostrarEnSpan("puntos", puntos);
+        aparecerComida();
         }
+}
+
+function aparecerComida (){
+    comidaX = generarAleatorio(0, canvas.width - ANCHO_COMIDA);
+    comidaY = generarAleatorio(0, canvas.width - ALTO_COMIDA);
+    actualizarPantalla();
+}
+
+function actualizarPantalla(){
+  limpiarCanva();
+  graficarGato();
+  graficarComida();
 }
