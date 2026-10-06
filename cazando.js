@@ -25,15 +25,17 @@ function graficarComida() {
 }
 
 function iniciarJuego(){
+  clearInterval(intervalo);
+  reiniciar();
   gatoX = (canvas.width - ANCHO_GATO) / 2;
   gatoY = (canvas.height - ALTO_GATO) / 2;
 
   comidaX = canvas.width - ANCHO_COMIDA;
   comidaY = canvas.height - ALTO_COMIDA;
-  graficarGato();
-  graficarComida();
+  actualizarPantalla();
   intervalo = setInterval(restarTiempo, 1000);
   aparecerComida();
+  
 }
 
 function graficarRectangulo (x, y, ancho, alto, color){
@@ -106,4 +108,13 @@ if (tiempo <= 0){
   clearInterval(intervalo);
   alert("¡Ganaste!");
   }
+}
+
+function reiniciar (){
+  
+    puntos = 0 ;
+    tiempo = 10 ;
+    mostrarEnSpan("puntos", puntos);
+    mostrarEnSpan("tiempo", tiempo);
+    
 }
