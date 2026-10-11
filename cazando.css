@@ -196,6 +196,65 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+/* ===== Ficha del autor ===== */
+.autor-ficha {
+  margin-top: 36px;
+  padding: 20px 22px;
+  text-align: left;
+  background: var(--musgo);
+  border: 2px solid var(--hoja);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+.autor-ficha h2 {
+  margin: 0 0 14px;
+  font-family: "Lilita One", "Arial Black", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--ambar);
+}
+
+.autor-ficha dl {
+  margin: 0;
+}
+
+.autor-ficha dl > div {
+  display: flex;
+  gap: 14px;
+  padding: 9px 0;
+  border-top: 1px solid rgba(63, 143, 90, 0.55);
+}
+
+.autor-ficha dt {
+  flex: 0 0 96px;
+  color: rgba(246, 241, 227, 0.65);
+}
+
+.autor-ficha dd {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-weight: 800;
+}
+
+.autor-ficha a {
+  color: var(--ambar);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.autor-ficha a:hover {
+  color: #f7b952;
+}
+
+.autor-ficha a:focus-visible {
+  outline: 3px solid var(--hueso);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* ===== Pantallas pequeñas ===== */
 @media (max-width: 480px) {
   body {
