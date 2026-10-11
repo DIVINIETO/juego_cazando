@@ -1,0 +1,13 @@
+Prompt inicial
+
+Quiero que actúes como un diseñador grafico y programador profesional para mejorar la interfaz gráfica del juego solo está permitido modificar los archivos HTML y CSS, y quiero que mejora los botones, títulos, textos para que todo se vea mucho mejor no quiero que alteres elementos del HTML que están ligados al JavaScript  
+
+Prompt para agregar mas información 
+
+Bien ahora quiero que añadas mas información del autor 
+Rol: Desarrollador y diseñador
+Proyecto: Videojuego con HTML, CSS y JavaScript
+Institución: KRAKEDEV
+Correo: davidnieto1125@gmail.com
+Año: 2026
+Quiero que agregues esta información

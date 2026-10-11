@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juego Cazando</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cazando.css"> 
+  <script src="utils.js" ></script>
+</head>
+<body onload="iniciarJuego();">
+
+  <main class="juego">
+
+    <header class="cabecera">
+      <h1>Juego Cazando</h1>
+      <p class="autor">Autor: DAVID NIETO</p>
+    </header>
+
+    <div class="panel">
+      <span class="dato">Puntos <span id="puntos">0</span></span>
+      <span class="dato">Tiempo <span id="tiempo">10</span></span>
+    </div>
+
+    <div class="marco">
+      <canvas id="areaJuego" width="500" height="500" ></canvas>
+    </div>
+
+    <p id="mensaje"></p>
+
+    <div class="controles">
+      <div class="cruceta">
+        <button class="btn-dir arriba" onclick="moverArriba();" aria-label="Mover arriba">⬆</button>
+        <button class="btn-dir izquierda" onclick="moverIzquierda();" aria-label="Mover a la izquierda">⬅</button>
+        <button class="btn-dir abajo" onclick="moverAbajo();" aria-label="Mover abajo">⬇</button>
+        <button class="btn-dir derecha" onclick="moverDerecha();" aria-label="Mover a la derecha">➡</button>
+      </div>
+      <button class="btn-reiniciar" onclick="iniciarJuego()">Reiniciar</button>
+    </div>
+
+  </main>
+
+  <script src="cazando.js" ></script>
+</body>
+</html>
