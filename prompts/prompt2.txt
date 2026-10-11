@@ -1,0 +1,3 @@
+promot inicial
+
+Quiero que actúes como un diseñador grafico y programador profesional para agregar imágenes al proyecto incorporándolo como fondo fondoCazando.jpg, También quiero que pongas esta images.jpg como logotipo a lado de la información del autor pero al momento de incorporar el fondo no quiero que altere el juego 
