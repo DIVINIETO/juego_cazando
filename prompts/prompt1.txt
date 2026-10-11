@@ -11,3 +11,7 @@ Institución: KRAKEDEV
 Correo: davidnieto1125@gmail.com
 Año: 2026
 Quiero que agregues esta información
+
+Prompt para colocar bien la información
+
+Pero quiero que la información este en la parte superior debajo del titulo pero que conserve la misma estructura que ya tiene la información del autor 

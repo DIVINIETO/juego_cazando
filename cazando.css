@@ -58,12 +58,6 @@ h1 {
   text-shadow: 0 4px 0 var(--ambar-oscuro), 0 10px 18px rgba(0, 0, 0, 0.35);
 }
 
-.autor {
-  margin: 12px 0 0;
-  font-size: 0.95rem;
-  color: rgba(246, 241, 227, 0.7);
-}
-
 /* ===== Marcador ===== */
 .panel {
   margin: 0 0 14px;
@@ -196,9 +190,9 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-/* ===== Ficha del autor ===== */
+/* ===== Ficha del autor (bajo el título) ===== */
 .autor-ficha {
-  margin-top: 36px;
+  margin: 20px 0 0;
   padding: 20px 22px;
   text-align: left;
   background: var(--musgo);
